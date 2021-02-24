@@ -1,6 +1,10 @@
 server:
   port: 8000
-  
+
+spring:
+  application:
+    name: payment-service
+
 config:
   info: "master branch,springcloud-config/config-test.yml version=7" 
 
