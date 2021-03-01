@@ -6,7 +6,7 @@ spring:
     name: payment-service
   
 config:
-  info: "master branch,springcloud-config/config-dev.yml version=7" 
+  info: master branch,payment-service,version=7
 
 eureka:
   instance:
