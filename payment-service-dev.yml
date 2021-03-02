@@ -6,7 +6,7 @@ spring:
     name: payment-service
   
 config:
-  info: master branch,payment-service-dev.yml,version=8888
+  info: master branch,payment-service-dev.yml,version=9999
 
 management:
   endpoints:
