@@ -10,17 +10,14 @@ config:
 
 eureka:
   instance:
-    instance-id: payment-service3000
+    instance-id: ${spring.application.name}:${server.port}
     prefer-ip-address: true
-    # Eureka 客户端想服务器端发送心跳的时间间隔，默认30秒
-    lease-renewal-interval-in-seconds: 30
-    # Eureka 服务端在收到最后一次心跳等待时间上限，单位秒，默认90秒，超时将提出服务
-    lease-expiration-duration-in-seconds: 90
+    lease-renewal-interval-in-seconds: 30  # Eureka 客户端想服务器端发送心跳的时间间隔，默认30秒
+    lease-expiration-duration-in-seconds: 90  # Eureka 服务端在收到最后一次心跳等待时间上限，单位秒，默认90秒，超时将提出服务
   client:
-    # false,是否将自己入住到注册中心
-    register-with-eureka: true
+    register-with-eureka: true  # false,是否将自己入住到注册中心
 
-    # false，表示自己就是注册中心，我的职责贡献就是维护服务实例，并不需要去检索服务
+    # false，表示自己就是注册中心,就是维护服务实例，并不需要去检索服务
     # true， 是否从 EurekaServer 抓取已有的注册信息，默认为true，单个节点无所谓，集群必须设置为 true，才能配置Ribbon使用负载均衡
     fetch-registry: true
 
