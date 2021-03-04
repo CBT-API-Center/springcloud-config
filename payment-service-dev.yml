@@ -7,6 +7,7 @@ spring:
   
 config:
   info: master branch,payment-service-dev.yml,version=9999
+  password: jack.liu
 
 management:
   endpoints:
