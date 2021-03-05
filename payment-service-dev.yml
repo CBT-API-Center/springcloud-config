@@ -8,6 +8,7 @@ spring:
 config:
   info: master branch,payment-service-dev.yml,version=9999
   password2000: '{cipher}ccc0a9f2ce8725163fb65cce5989553ee55ade567bfb586bee273ea6dfc93cd7'
+  password2001: 123123
 
 management:
   endpoints:
