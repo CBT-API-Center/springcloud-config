@@ -7,7 +7,8 @@ spring:
   
 config:
   info: master branch,payment-service-dev.yml,version=9999
-  password: '{cipher}ccc0a9f2ce8725163fb65cce5989553ee55ade567bfb586bee273ea6dfc93cd7'
+  password_dc: '{cipher}ccc0a9f2ce8725163fb65cce5989553ee55ade567bfb586bee273ea6dfc93cd7'
+  password_fdc: '{cipher}AQALKI48Bub5mMHi1khQhKpMeONwOoG5wNwscMqi0jX9GQT4VYNUuTx7CgbtQfzZ8G4Hcf7dp8ysiZjAPg7x1xE7NpuGPCKVv8YSSrrSaP0LUAsyZt9WBYT8H5fvYBjLk2w8/pCE9tf42xmyyKzc3DAtHvNJ79t4EjQeNdZQxD4wEfeq50Xx4I2tfceIIoCNak9mlSjsIU8aGTD1c8TLEPAu0owGbwlsnBnLA+xXS+/+5ZDzF8V1pOSlxza5/8p9zdUzGrRZXQLwZxO/d5dP/kWIa2Op0sCicgW803QssGiQKcmG442Kussaf4TNpJceJfygAvwECKwVgK3O7r7yuhfuOoXCfm2P/HBbx9kOawr+WvcHXUo6Ny9h/Ou9w8Xsj6U='
 
 management:
   endpoints:
