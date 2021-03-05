@@ -5,6 +5,11 @@ spring:
   application:
     name: payment-service
 
+  security:
+    user:
+      name: jack
+      password: q1w2e3r4
+
 config:
   info: master branch,payment-service-dev.yml,version=9999
   password2000: 123123
