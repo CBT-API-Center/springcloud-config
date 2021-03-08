@@ -4,30 +4,16 @@ server:
 spring:
   application:
     name: payment-service
-  
+
+  security:
+    user:
+      name: jack
+      password: q1w2e3r4
+
 config:
-  info: master branch,payment-service-test.yml,version=7
-
-eureka:
-  instance:
-    instance-id: payment-service3000
-    prefer-ip-address: true
-    # Eureka 客户端想服务器端发送心跳的时间间隔，默认30秒
-    lease-renewal-interval-in-seconds: 30
-    # Eureka 服务端在收到最后一次心跳等待时间上限，单位秒，默认90秒，超时将提出服务
-    lease-expiration-duration-in-seconds: 90
-  client:
-    # false,是否将自己入住到注册中心
-    register-with-eureka: true
-
-    # false，表示自己就是注册中心，我的职责贡献就是维护服务实例，并不需要去检索服务
-    # true， 是否从 EurekaServer 抓取已有的注册信息，默认为true，单个节点无所谓，集群必须设置为 true，才能配置Ribbon使用负载均衡
-    fetch-registry: true
-
-    service-url:
-      # 设置与 Eureka Server 交互的地址，查询服务 和 注册服务 都需要依赖这个地址
-      # defaultZone: http://localhost:7001/eureka/  #单机版
-      defaultZone: http://eureka7001.com:1000/eureka/
+  info: master branch,payment-service-dev.yml,version=9999
+  password2000: 非对称加密
+  password2001: '{cipher}AQB+h/Qu6aoNiek1cA+7NzWGCbmNqYfqKBca9mAFEhWTNBX2+HohAQnc0qltQbMe2vw7NCVg+p49kDkeFXoEGHKyIRrWrxcuNWyHaMjl5YvHDs1HPJo3oqSXeO7SfJQKhWUczsT991WJGlScreSqqI1N6iZIA0raxLEqSfBkm40sDB7FQ9f27jlcALn0ubjZccJ26oL2Klu30EBXMRiVgUbARWIKH5Ld0OdNdxyMckUpC9L8rEzpw/iTfBaLsOe2X/nRYLVYSgMnJsIQyw9PTkFvsO4GAJiA7eeTrn62BMAphI/+uTPAhazU/8PNehdHrDr5c17TLdcDIv1RzT3sp0lHCnfn0Yv1XrHXjW80O/XQFI3W5l3yVjeAe/3rejhUJKA='
 
 management:
   endpoints:
