@@ -20,15 +20,3 @@ management:
     web: # Actuator HTTP 配置项，对应 WebEndpointProperties 配置类
       exposure:
         include: refresh # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置 * ，可以开放所有端点。
-
-eureka:
-  instance:
-    instance-id: payment-service
-    prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 30  # Eureka 客户端想服务器端发送心跳的时间间隔，默认30秒
-    lease-expiration-duration-in-seconds: 90  # Eureka 服务端在收到最后一次心跳等待时间上限，单位秒，默认90秒，超时将提出服务
-  client:
-    register-with-eureka: true  # 是否将自己入住到注册中心
-    fetch-registry: true  # 是否从注册中心得到服务实例列表
-    service-url:
-      defaultZone: http://localhost:1000/eureka,http://localhost:1001/eureka
