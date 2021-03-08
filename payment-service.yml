@@ -12,7 +12,7 @@ spring:
 
 config:
   info: master branch,payment-service-dev.yml,version=9999
-  password2000: 非对称加密
+  password2000: Asymmetric encryption
   password2001: '{cipher}AQB+h/Qu6aoNiek1cA+7NzWGCbmNqYfqKBca9mAFEhWTNBX2+HohAQnc0qltQbMe2vw7NCVg+p49kDkeFXoEGHKyIRrWrxcuNWyHaMjl5YvHDs1HPJo3oqSXeO7SfJQKhWUczsT991WJGlScreSqqI1N6iZIA0raxLEqSfBkm40sDB7FQ9f27jlcALn0ubjZccJ26oL2Klu30EBXMRiVgUbARWIKH5Ld0OdNdxyMckUpC9L8rEzpw/iTfBaLsOe2X/nRYLVYSgMnJsIQyw9PTkFvsO4GAJiA7eeTrn62BMAphI/+uTPAhazU/8PNehdHrDr5c17TLdcDIv1RzT3sp0lHCnfn0Yv1XrHXjW80O/XQFI3W5l3yVjeAe/3rejhUJKA='
 
 management:
