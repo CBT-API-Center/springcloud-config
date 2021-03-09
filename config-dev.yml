@@ -1,2 +1,8 @@
 config:
-  info: master branch,springcloud-config/config-dev.yml version=7 
+  info: master branch,springcloud-config/config-dev.yml version=7
+
+management:
+  endpoints:
+    web: # Actuator HTTP 配置项，对应 WebEndpointProperties 配置类
+      exposure:
+        include: refresh # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置 * ，可以开放所有端点。
